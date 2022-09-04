@@ -9,7 +9,11 @@ let weather = {
       )
         .then((response) => {
           if (!response.ok) {
-            alert("Enter the city name")();
+              if(city=="")   
+                  alert("Enter city name")();
+              else
+              {
+alert("Enter valid city name);
             
           }
           return response.json();
