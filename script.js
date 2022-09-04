@@ -9,13 +9,9 @@ let weather = {
       )
         .then((response) => {
           if (!response.ok) {
-              if(city=="")   
+              if(city=="") {  
                   alert("Enter city name")();
-              else
-              {
-alert("Enter valid city name);
-            
-          }
+              }
           return response.json();
         })
         .then((data) => this.displayWeather(data));
